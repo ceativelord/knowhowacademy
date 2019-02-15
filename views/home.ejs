@@ -1,9 +1,24 @@
-<% include partials/header%>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>knowhowonlineacademy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--PHONE DETECTION PREVENTION FOR SAFARI-->
+<meta name="format-detection" content="telephone=no">
+
+<!--PHONE DETECTION FOR BLACKBERY-->
+<meta http-equiv="x-rim-auto-match" content="none">
+<link rel="stylesheet" type="text/css" href="/stylesheets/main2.css">
+
+</head>
+<body>
  
  
   <!-- Header -->
   <div class="header">
-    <h1><xx-bold>MY EBOOK SITE</xx-bold></h1>
+<img src="/images/myWORLD.png" alt="myWorld.png" class="headerimg">
     
   </div>
   
@@ -14,7 +29,7 @@
         <button class="dropbtn">CATEGORIES</button>
         <div class="dropdown-content">
           <a href="#">EBOOKS</a>
-          <a href="#">VIDEOS</a>
+         <a href="#ex1" rel="modal:open">VIDEOS</a>
         </div>
     </div>
     <a href="#">NEW RELEASES</a>
@@ -58,23 +73,23 @@ of producing or doing it all by yourself with ease. We expose and
 
 
   <div class="container" >
-    <h1 class="hotsale">HOT SALES</h1>
+    <p class="hotsales">HOT SALES</p>
     
     <figure class="ebooks">
-        <a href=""><img class="eimg" src="/images/ebook3.jpg" ></a>
+        <a href="/salespage1"><img class="eimg" src="/images/ebook3.png" ></a>
         <figcaption>
-          <p>Customer reviews:4.9 average out of 37</p>
-          <p class="download"><a href="/salespage1"><div class="tooltip">DOWNLOAD NOW
-              <div class="tooltiptext"><p>over 37 succesful sales</p></div>
+          <p>100% CUSTOMERS SATISFACTION</p>
+          <p class="download"><a href="/salespage1"><div class="tooltip"><span class="download">DOWNLOAD NOW</span>
+              <div class="tooltiptext"><p>over 104 succesful sales</p></div>
             </div></a></p>
         </figcaption>
       </figure> 
-      <figure class="ebooks">
-          <a href=""><img class="eimg" src="/images/ebook3.jpg" ></a>
+      <figure class="ebooks eimg2">
+          <a href="/salespage2"><img class="eimg" src="/images/ebook4.png" ></a>
           <figcaption>
-            <p>Customer reviews:4.9 average out of 37</p>
-            <p class="download"><a href="/salespage2"><div class="tooltip">DOWNLOAD NOW
-                <div class="tooltiptext"><p>over 37 succesful sales</p></div>
+            <p>100% CUSTOMERS SATISFACTION</p>
+            <p class="download"><a href="/salespage2"><div class="tooltip"><span class="download">DOWNLOAD NOW</span>
+                <div class="tooltiptext"><p>over 196 succesful sales</p></div>
               </div></a></p>
           </figcaption>
         </figure> 
@@ -88,6 +103,22 @@ of producing or doing it all by yourself with ease. We expose and
        <div class="clear">
 
        </div>
+   <hr class="hr">
 
+  <div class="callus"><xx-large>call us now at 08063623374 for more details</xx-large></div>
+  <div id="ex1" class="modal">
+    <p>COMING SOON</p>
+    <a href="#" rel="modal:close">Close</a>
+  </div>
+  
+  <!-- Link to open the modal -->
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 <!-- Footer -->
 <% include partials/footer %>
+
+

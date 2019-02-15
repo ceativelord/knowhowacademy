@@ -27,6 +27,4 @@ app.get("/salespage2", function(req, res){
 
 
 
-app.listen(3000, function(){
-    console.log("server has started");
-});
+app.listen(process.env.PORT, process.env.IP);
